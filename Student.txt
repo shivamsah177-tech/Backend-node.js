@@ -1,0 +1,15 @@
+const fs = require("fs");
+
+fs.writeFile(
+  "student.txt",
+  `Name: Shivam Sah
+Course: Full Stack Development
+Technology: Node.js`,
+  (err) => {
+    if (err) {
+      console.log("Error creating file:", err);
+    } else {
+      console.log("File created successfully");
+    }
+  }
+);
